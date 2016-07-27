@@ -6,10 +6,7 @@ namespace SharpGlfw
     /// C# Glfw3 Bindings
     /// 
     /// Version: 3.2
-    /// 
-    /// Thanks to the work of @andykorth at
-    /// https://github.com/andykorth/Pencil.Gaming/tree/master/Pencil.Gaming/Glfw
-    /// 
+    ///
     /// </summary>
     /// 
     public static unsafe partial class Glfw
