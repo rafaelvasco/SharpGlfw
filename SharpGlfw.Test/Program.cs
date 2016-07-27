@@ -4,11 +4,8 @@ namespace SharpGlfw.Test
 {
     class Program
     {
-        
-
         static void Main()
         {
-
             if (!Glfw.Init())
             {
                 Glfw.Terminate();
@@ -33,8 +30,6 @@ namespace SharpGlfw.Test
 
             while (!Glfw.WindowShouldClose(window))
             {
-                
-
                 Glfw.PollEvents();
 
                 if (Glfw.GetKey(window, Key.Escape))
