@@ -16,21 +16,19 @@
             SetWindowPos(window, desktopW / 2 - windowW / 2, desktopH / 2 - windowH / 2);
         }
 
-        public static GlfwWindow CreateWindow(int width, int height, string title, bool fullscreen = false)
+        public static GlfwWindow CreateWindow(int width, int height, string title)
         {
-            if (!fullscreen)
-            {
-                return GlfwCore.glfwCreateWindow(width, height, title, GlfwMonitor.Null, GlfwWindow.Null);
-            }
+            return GlfwCore.glfwCreateWindow(width, height, title, GlfwMonitor.Null, GlfwWindow.Null);
+        }
 
-
+        public static GlfwWindow CreateWindow()
+        {
             GlfwVidMode videoMode = GetVideoMode(GetPrimaryMonitor());
 
             WindowHint(WindowAttrib.Decorated, 0);
             WindowHint(WindowAttrib.Resizable, 0);
 
-            return GlfwCore.glfwCreateWindow(videoMode.Width, videoMode.Height, title, GlfwMonitor.Null, GlfwWindow.Null);
-
+            return GlfwCore.glfwCreateWindow(videoMode.Width, videoMode.Height, string.Empty, GlfwMonitor.Null, GlfwWindow.Null);
         }
     }
 }
