@@ -8,7 +8,7 @@ namespace SharpGlfw
     /// Version: 3.2
     ///
     /// </summary>
-    /// 
+    
     public static unsafe partial class Glfw
     {
 #pragma warning disable 0414
